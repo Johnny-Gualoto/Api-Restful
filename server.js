@@ -9,6 +9,7 @@ require('./server/config/mongoose.config')
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+//importacion del archivo de las rutas
 const LibrosRoutes=require('./server/routes/libros.routes');
 LibrosRoutes(app);
 
